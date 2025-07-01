@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Funny Nickname Generator</title>
+  </head>
+  <body>
+    <h1>Open Console to See Your Funny Nickname 😂</h1>
+    <script>
+      // Ask user's name
+      var realName = prompt("Enter your real name:");
+
+      // Generate nickname using first 2 letters + random number
+      var nickname =
+        realName.slice(0, 2).toUpperCase() + Math.floor(Math.random() * 100);
+
+      // Print result
+      console.log("Your funny nickname is: " + nickname);
+    </script>
+  </body>
+</html>
