@@ -1,0 +1,9 @@
+┌───────────────────────────────────────┐
+│             TASK MANAGER              │
+├───────────────────────────────────────┤
+│ [Input box]       [Add Task Button]   │
+│                                       │
+│ ✔️ Learn JavaScript       [Delete]     │
+│ ❌ Build Project          [Delete]     │
+│ ✔️ Buy Groceries          [Delete]     │
+└───────────────────────────────────────┘ 

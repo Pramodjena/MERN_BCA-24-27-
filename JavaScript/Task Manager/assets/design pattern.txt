@@ -1,0 +1,7 @@
+  📁 Task Manager
+├── 📜 index.html        (Structure)
+├── 📜 styles.css        (Presentation)
+└── 📜 script.js         (Behavior)
+    ├── Data Layer       (localStorage CRUD)
+    ├── Logic Layer      (Task Operations)
+    └── UI Layer        (DOM Rendering)
