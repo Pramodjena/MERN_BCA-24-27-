@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef;
+  margin-top: 50px;
+}
+
+.imgContainer img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.buttonContainer button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 100px;
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Custom slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Circle inside slider */
+.slider::before {
+  content: "OFF";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 15px;
+  bottom: 10px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #969292;
+}
+
+/* When checked */
+input:checked + .slider {
+  background-color: #07650e;
+}
+
+/* Move the circle */
+input:checked + .slider::before {
+  transform: translateY(-40px);
+  content: "ON";
+}
